@@ -1,8 +1,8 @@
-import { StaticticContainer, StatItem, StatValue } from './Statictics.styled';
+import { StatisticContainer, StatItem, StatValue } from './Statictics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
-    <StaticticContainer>
+    <StatisticContainer>
       <StatItem color="#00b894">
         <StatValue>Good: {good}</StatValue>
       </StatItem>
@@ -18,7 +18,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
       <StatItem color="#9E1CC3">
         <StatValue>Positive feedback: {positivePercentage()}%</StatValue>
       </StatItem>
-    </StaticticContainer>
+    </StatisticContainer>
   );
 };
 

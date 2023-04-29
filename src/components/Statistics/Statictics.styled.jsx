@@ -1,15 +1,26 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-const StaticticContainer = styled.ul`
+const appear = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const StatisticContainer = styled.ul`
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 0;
+  animation: ${appear} 0.5s ease-in-out;
 `;
 
 const StatItem = styled.li`
   display: flex;
-  
   padding: 10px;
   background-color: ${({ color }) => color};
   border: 1px solid ${({ color }) => color};
@@ -22,4 +33,4 @@ const StatValue = styled.p`
   margin: 0;
 `;
 
-export { StaticticContainer, StatItem, StatValue };
+export { StatisticContainer, StatItem, StatValue };
