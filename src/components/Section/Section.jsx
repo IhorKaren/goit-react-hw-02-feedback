@@ -1,10 +1,12 @@
+import { SectionContainer} from './Section.syled';
+
 const Section = ({ title, children }) => {
   return (
-    <section>
+    <SectionContainer>
       <h2>{title}</h2>
       {children}
-    </section>
+    </SectionContainer>
   );
 };
 
-export default Section
+export default Section;
