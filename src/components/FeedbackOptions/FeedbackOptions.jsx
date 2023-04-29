@@ -1,4 +1,4 @@
-const FeedbackOptions = ({options, onLeaveFeedback}) => {
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ul>
       <li>
