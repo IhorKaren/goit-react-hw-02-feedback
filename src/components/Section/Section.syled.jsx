@@ -6,6 +6,4 @@ const SectionContainer = styled.section`
   align-items: center;
 `;
 
-
-
 export { SectionContainer };
