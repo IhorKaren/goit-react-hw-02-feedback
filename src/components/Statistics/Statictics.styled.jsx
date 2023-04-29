@@ -27,6 +27,7 @@ const StatItem = styled.li`
   border-radius: 5px;
   color: #fff;
   list-style: none;
+  transition: width 0.3s ease-in-out;
 `;
 
 const StatValue = styled.p`
