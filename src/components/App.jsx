@@ -31,11 +31,14 @@ export class App extends Component {
   };
 
   render() {
+    const { good, neutral, bad } = this.state;
+    const options = Object.keys(this.state);
+
     return (
       <Container>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options="this.state"
+            options={options}
             onLeaveFeedback={this.hadleAddFeedback}
           ></FeedbackOptions>
         </Section>
@@ -44,9 +47,9 @@ export class App extends Component {
             <Notification message="There is no feedback"></Notification>
           ) : (
             <Statistics
-              good={this.state.good}
-              neutral={this.state.neutral}
-              bad={this.state.bad}
+              good={good}
+              neutral={neutral}
+              bad={bad}
               total={this.countTotalFeedback}
               positivePercentage={this.countPositiveFeedbackPercentage}
             ></Statistics>
